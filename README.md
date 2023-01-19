@@ -15,4 +15,5 @@ Aplicativo de controle financeiro completo, feito em React Native.
 git clone https://github.com/365rafael/smartMoney
 
 Acesse o diretório do projeto, instale as dependências (digite yarn no terminal e dê enter) (para ios, dê cd IOS e digite pod install).
+
 Rode em seu smartphone ou emulador: react-native run-android ou react-native run-ios
