@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {Button, StyleSheet, View} from 'react-native';
 
 import BalancePanelLabel from './BalancePanelLabel';
 import BalancePanelChart from './BalancePanelChart';

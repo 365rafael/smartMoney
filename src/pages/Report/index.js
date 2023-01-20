@@ -1,6 +1,5 @@
 import React from 'react';
-import {View, Button, StyleSheet} from 'react-native';
-import {Picker} from '@react-native-picker/picker';
+import {Button, Picker, StyleSheet, View} from 'react-native';
 
 import BalanceLabel from '../../components/BalanceLabel';
 import EntrySummary from '../../components/EntrySummary';
