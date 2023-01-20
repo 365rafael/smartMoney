@@ -4,7 +4,7 @@ const EntrySchema = {
   properties: {
     id: 'string',
     amount: 'double',
-    description: 'string',
+    description: 'string?',
     entryAt: 'date',
     latitude: 'float?',
     longitude: 'float?',

@@ -1,6 +1,7 @@
 import {Alert} from 'react-native';
 
 import {getRealm} from './Realm';
+import {getUUID} from './UUID';
 
 export const getEntries = async () => {
   const realm = await getRealm();
@@ -12,23 +13,20 @@ export const getEntries = async () => {
   return entries;
 };
 
-export const saveEntry = async value => {
+export const saveEntry = async (value, entry = {}) => {
   const realm = await getRealm();
   let data = {};
-
-  const {amount} = value;
 
   try {
     realm.write(() => {
       data = {
-        id: 'ABC',
-        amount: amount,
-        description: 'bbbbb',
-        entryAt: new Date(),
+        id: value.id || entry.id || getUUID(),
+        amount: value.amount || entry.amount,
+        entryAt: value.entryAt || entry.entryAt,
         isInit: false,
       };
 
-      realm.create('Entry', data, true); // esse true quer dizer que se tiver o mesmo id ele atualiza
+      realm.create('Entry', data, true);
     });
     console.log('saveEntry :: data: ', data);
   } catch (error) {
