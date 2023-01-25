@@ -9,6 +9,13 @@ Aplicativo de controle financeiro completo, feito em React Native.
 - Reanimated
 - FlatList
 - React Hooks (useEffect, useState)
+- React Native Masked Input
+- Linear Gradient
+- UseEffect
+- UseState
+- Icons
+- SVG
+- Grafics
 
 # Instalação
 
