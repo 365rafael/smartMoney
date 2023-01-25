@@ -18,6 +18,7 @@
     "react-native-gesture-handler": "^2.9.0",
     "react-native-get-random-values": "^1.8.0",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-masked-input": "^2.2.3",
     "react-native-reanimated": "^2.14.2",
     "react-native-safe-area-context": "^4.4.1",
     "react-native-screens": "^3.19.0",

@@ -5,8 +5,10 @@ import BalanceLabel from '../../components/BalanceLabel';
 
 import {saveEntry, deleteEntry} from '../../services/Entries';
 
+import Colors from '../../styles/Colors';
+import NewEntryInput from './NewEntryInput';
+
 const NewEntry = ({navigation}) => {
-  const currentBalance = 2064.35;
   const entry = navigation.getParam('entry', {
     id: null,
     amount: '0.00',
@@ -44,14 +46,11 @@ const NewEntry = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <BalanceLabel currentBalance={currentBalance} />
+      <BalanceLabel />
 
       <View>
-        <TextInput
-          style={styles.input}
-          value={amount}
-          onChangeText={text => setAmount(text)}
-        />
+        <NewEntryInput value={amount} onChangeValue={setAmount} />
+
         <TextInput style={styles.input} />
         <Button title="GPS" />
         <Button title="Câmera" />
@@ -70,6 +69,7 @@ export default NewEntry;
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: Colors.background,
     flex: 1,
     padding: 10,
   },
