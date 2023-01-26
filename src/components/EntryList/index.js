@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, StyleSheet} from 'react-native';
+import {FlatList} from 'react-native';
 
 import EntryListItem from './EntryListItem';
 import Container from '../Core/Container';

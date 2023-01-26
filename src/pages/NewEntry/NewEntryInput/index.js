@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View, Text} from 'react-native';
-import {TextInputMask} from 'react-native-masked-input';
+import {TextInputMask} from 'react-native-masked-text';
 
 import Colors from '../../../styles/Colors';
 
@@ -16,6 +16,7 @@ const NewEntryInput = ({value, onChangeValue}) => {
         autoFocus={false}
         type={'money'}
         options={{
+          // maskType: 'BRL',
           precision: '2',
           separator: ',',
           delimiter: '.',

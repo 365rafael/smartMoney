@@ -6,7 +6,7 @@ import {getUUID} from './UUID';
 export const getEntries = async () => {
   const realm = await getRealm();
 
-  const entries = realm.objects('Entry');
+  const entries = realm.objects('Entry').toJSON();
 
   console.log('getEntries :: entries', JSON.stringify(entries));
 
